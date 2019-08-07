@@ -5,8 +5,13 @@ import TextField from 'material-ui/TextField';
 import moduleName from 'material-ui/RaisedButton';
 
 export class FormUserDetails extends Component {
+	continue = event => {
+		event.preventDefault();
+		this.props.nextStep();
+	}
 
 	render() {
+		const { values } = this.props; // this.props.values
 		return (
 			<div>
 				<h1>Test user details</h1>
