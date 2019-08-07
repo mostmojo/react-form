@@ -11,7 +11,7 @@ export class FormUserDetails extends Component {
 	}
 
 	render() {
-		const { values } = this.props; // this.props.values
+		const { values, handleChange } = this.props; // this.props.values
 		return (
 			<MuiThemeProvider>
 				<React.Fragment>
@@ -19,6 +19,8 @@ export class FormUserDetails extends Component {
 					<TextField
 					hintText="Enter your first and last name"
 					floatingLabelText="Name"
+					onChange={handleChange('name')} // Destructure. No need for this.props.handleChange
+					defaultValue={values.name}
 					/>
 				</React.Fragment>
 			</MuiThemeProvider>
