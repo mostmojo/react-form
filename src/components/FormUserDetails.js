@@ -13,9 +13,15 @@ export class FormUserDetails extends Component {
 	render() {
 		const { values } = this.props; // this.props.values
 		return (
-			<div>
-				<h1>Test user details</h1>
-			</div>
+			<MuiThemeProvider>
+				<React.Fragment>
+					<AppBar title="Enter User Details" />
+					<TextField
+					hintText="Enter your first and last name"
+					floatingLabelText="Name"
+					/>
+				</React.Fragment>
+			</MuiThemeProvider>
 		);
 	}
 }
