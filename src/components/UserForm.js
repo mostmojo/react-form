@@ -2,6 +2,7 @@
 /* eslint-disable default-case */
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
+import Privacy from './Privacy';
 
 export class UserForm extends Component {
 	state = {
@@ -29,7 +30,6 @@ export class UserForm extends Component {
 	}
 
 	// Handle all the field changes
-
 	handleChange = input => event => {
 		this.setState({[input]: event.target.value});
 	}
@@ -38,7 +38,9 @@ export class UserForm extends Component {
 	render() {
 		const { step } = this.state;
 		const { name, role, email, password } = this.state;
+		const { updates, communication } = this.state;
 		const values = { name, role, email, password }
+		const privacyValues = { updates, communication }
 
 		switch(step) {
 			case 1:
@@ -46,7 +48,9 @@ export class UserForm extends Component {
 					<FormUserDetails nextStep={this.nextStep} handleChange={this.handleChange} values={values} />
 				)
 			case 2:
-				return <h1>FormPersonalDetails</h1>
+				return (
+					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} privacyValues={privacyValues} />
+				)
 			case 3:
 				return <h1>Confirm</h1>
 			case 3:
