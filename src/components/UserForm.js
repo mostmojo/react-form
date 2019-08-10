@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import Privacy from './Privacy';
+import Confirm from './Confirm';
 
 export class UserForm extends Component {
 	state = {
@@ -49,10 +50,12 @@ export class UserForm extends Component {
 				)
 			case 2:
 				return (
-					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} privacyValues={values} />
+					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} privacyValues={privacyValues} />
 				)
 			case 3:
-				return <h1>Confirm</h1>
+				return (
+					<Confirm nextStep={this.nextStep} prevStep={this.prevStep} values={values} />
+				)
 			case 3:
 				return <h1>Successful</h1>
 		}
