@@ -1,5 +1,3 @@
-/* eslint-disable no-duplicate-case */
-/* eslint-disable default-case */
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import Privacy from './Privacy';
