@@ -28,7 +28,7 @@ export class Privacy extends Component {
 					/>
 					<br />
 					<TextField
-					floatingLabelText="Receive product news by email"
+					floatingLabelText="Receive company product news"
 					onChange={handleChange('communication')}
 					defaultValue={privacyValues.communication}
 					/>

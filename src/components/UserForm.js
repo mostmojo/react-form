@@ -49,7 +49,7 @@ export class UserForm extends Component {
 				)
 			case 2:
 				return (
-					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} privacyValues={privacyValues} />
+					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} privacyValues={values} />
 				)
 			case 3:
 				return <h1>Confirm</h1>
