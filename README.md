@@ -1,4 +1,4 @@
-# React form 🤓
+# React form
 
 To get this set up in your own local environment using the command line:
 
@@ -8,7 +8,7 @@ To get this set up in your own local environment using the command line:
 
 * `npm install`
 
-* `npm start`
+* `npm start` 🙃
 
 -----
 
