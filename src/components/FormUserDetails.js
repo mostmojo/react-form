@@ -17,8 +17,9 @@ export class FormUserDetails extends Component {
 				<React.Fragment>
 					<AppBar title="Enter User Details" />
 					<TextField
+					required
 					hintText="Ex. Jacob Trayson"
-					floatingLabelText="Name"
+					floatingLabelText="Name *"
 					onChange={handleChange('name')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.name}
 					/>
@@ -31,15 +32,17 @@ export class FormUserDetails extends Component {
 					/>
 					<br />
 					<TextField
+					required
 					hintText="Ex. jacob@trayson.com"
-					floatingLabelText="Email"
+					floatingLabelText="Email *"
 					onChange={handleChange('email')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.email}
 					/>
 					<br />
 					<TextField
+					required
 					hintText="•••••••••"
-					floatingLabelText="Password"
+					floatingLabelText="Password *"
 					onChange={handleChange('password')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.password}
 					/>
