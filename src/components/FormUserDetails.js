@@ -24,7 +24,8 @@ export class FormUserDetails extends Component {
 					defaultValue={values.name}
 					id="name"
             		label="Name"
-            		name="name"
+					name="name"
+					autoFocus
 					/>
 					<br />
 					<TextField
@@ -48,7 +49,6 @@ export class FormUserDetails extends Component {
             		label="Email Address"
             		name="email"
             		autoComplete="email"
-            		autoFocus
 					/>
 					<br />
 					<TextField
