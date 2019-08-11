@@ -22,6 +22,9 @@ export class FormUserDetails extends Component {
 					floatingLabelText="Name *"
 					onChange={handleChange('name')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.name}
+					id="name"
+            		label="Name"
+            		name="name"
 					/>
 					<br />
 					<TextField
@@ -29,6 +32,10 @@ export class FormUserDetails extends Component {
 					floatingLabelText="Role"
 					onChange={handleChange('role')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.role}
+					id="role"
+            		label="Role"
+            		name="role"
+            		autoComplete="role"
 					/>
 					<br />
 					<TextField
@@ -37,6 +44,11 @@ export class FormUserDetails extends Component {
 					floatingLabelText="Email *"
 					onChange={handleChange('email')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.email}
+					id="email"
+            		label="Email Address"
+            		name="email"
+            		autoComplete="email"
+            		autoFocus
 					/>
 					<br />
 					<TextField
@@ -45,6 +57,11 @@ export class FormUserDetails extends Component {
 					floatingLabelText="Password *"
 					onChange={handleChange('password')} // Destructure. No need for this.props.handleChange
 					defaultValue={values.password}
+					id="password"
+            		label="Password"
+					name="password"
+					type="password"
+            		autoComplete="current-password"
 					/>
 					<br />
 					<RaisedButton
