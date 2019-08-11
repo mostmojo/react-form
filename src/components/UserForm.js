@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
 import Privacy from './Privacy';
 import Confirm from './Confirm';
-import Successful from './Successful';
+import Done from './Done';
 
 export class UserForm extends Component {
 	state = {
@@ -56,7 +56,7 @@ export class UserForm extends Component {
 					<Confirm nextStep={this.nextStep} prevStep={this.prevStep} values={values} />
 				)
 			case 4:
-				return <Successful />;
+				return <Done />;
 
 			default: // do nothing
 		}

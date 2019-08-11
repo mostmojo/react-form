@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 
-export class Successful extends Component {
+export class Done extends Component {
 	continue = event => {
 		event.preventDefault();
 		// Process form (Send data to API - express, flask, php in the backend)
@@ -18,7 +18,7 @@ export class Successful extends Component {
 		return (
 			<MuiThemeProvider>
 				<React.Fragment>
-					<AppBar title="Successful" />
+					<AppBar title="Done" />
 					<h1><span role="img" aria-label="checkbox">✔</span> Please verify your email address.</h1>
 					<p>You should have received an email from us already! <span role="img" aria-label="party-emoji">🎉</span></p>
 				</React.Fragment>
@@ -27,4 +27,4 @@ export class Successful extends Component {
 	}
 }
 
-export default Successful;
+export default Done;
