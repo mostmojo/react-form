@@ -37,9 +37,7 @@ export class UserForm extends Component {
 	render() {
 		const { step } = this.state;
 		const { name, role, email, password } = this.state;
-		const { updates, communication } = this.state;
 		const values = { name, role, email, password }
-		const privacyValues = { updates, communication }
 
 		switch(step) {
 			case 1:
@@ -48,7 +46,7 @@ export class UserForm extends Component {
 				)
 			case 2:
 				return (
-					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} privacyValues={privacyValues} />
+					<Privacy nextStep={this.nextStep} prevStep={this.prevStep} handleChange={this.handleChange} />
 				)
 			case 3:
 				return (
