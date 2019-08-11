@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import FormControlLabel from '@material-ui/core/Checkbox';
+import Checkbox from '@material-ui/core/Checkbox';
+import FormControl from '@material-ui/core/FormControl';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormHelperText from '@material-ui/core/FormHelperText';
+
 
 export class Privacy extends Component {
 	continue = event => {
@@ -16,22 +21,26 @@ export class Privacy extends Component {
 	}
 
 	render() {
-		const { privacyValues, handleChange } = this.props; // this.props.values
 		return (
 			<MuiThemeProvider>
 				<React.Fragment>
 					<AppBar title="Privacy" />
-					<TextField
-					floatingLabelText="Receive company updates by email"
-					onChange={handleChange('updates')}
-					defaultValue={privacyValues.updates}
-					/>
-					<br />
-					<TextField
-					floatingLabelText="Receive company product news"
-					onChange={handleChange('communication')}
-					defaultValue={privacyValues.communication}
-					/>
+					<FormControl component="fieldset">
+						<FormGroup>
+							<FormControlLabel
+								control={ <Checkbox /> }
+								label="Receive company updates by email about various news and events"
+							/>
+							<FormHelperText>Receive company updates by email about various news and events</FormHelperText>
+							<br />
+							<FormControlLabel
+								control={ <Checkbox /> }
+								label="Receive communication by email for other products created by the team"
+							/>
+							<FormHelperText>Receive communication by email for other products created by the team</FormHelperText>
+							<br />
+						</FormGroup>
+					</FormControl>
 					<br />
 					<RaisedButton
 					label="submit"
