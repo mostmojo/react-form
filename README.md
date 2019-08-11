@@ -1,3 +1,17 @@
+# React form 🤓
+
+To get this set up in your own local environment using the command line:
+
+* `git clone git@github.com:mostmojo/react-form.git` (SSH preferred method)
+
+* `cd` into repository directory (i.e - `react-form git:(master)`), which contains the `package.json` file.
+
+* `npm install`
+
+* `npm start`
+
+-----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
