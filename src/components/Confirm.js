@@ -7,7 +7,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 export class FormUserDetails extends Component {
 	continue = event => {
 		event.preventDefault();
-		// Process form (Send data to API - express, flask, php in the backend)
+		// This is where we could process form (Send data to API - express, flask, php in the backend)
 		this.props.nextStep();
 	}
 
@@ -17,7 +17,7 @@ export class FormUserDetails extends Component {
 	}
 
 	render() {
-		const { values: { name, role, email } } = this.props; // this.props.values
+		const { values: { name, role, email } } = this.props; // this.props.values - destructure
 		return (
 			<MuiThemeProvider>
 				<>

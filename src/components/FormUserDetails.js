@@ -11,7 +11,7 @@ export class FormUserDetails extends Component {
 	}
 
 	render() {
-		const { values, handleChange } = this.props; // this.props.values
+		const { values, handleChange } = this.props; // this.props.values - destructure
 		return (
 			<MuiThemeProvider>
 				<>
@@ -20,7 +20,7 @@ export class FormUserDetails extends Component {
 					required
 					hintText="Ex. Jacob Trayson"
 					floatingLabelText="Name *"
-					onChange={handleChange('name')} // Destructure. No need for this.props.handleChange
+					onChange={handleChange('name')}
 					defaultValue={values.name}
 					id="name"
             		label="Name"
@@ -30,7 +30,7 @@ export class FormUserDetails extends Component {
 					<TextField
 					hintText="Ex. Web Developer"
 					floatingLabelText="Role"
-					onChange={handleChange('role')} // Destructure. No need for this.props.handleChange
+					onChange={handleChange('role')}
 					defaultValue={values.role}
 					id="role"
             		label="Role"
@@ -42,7 +42,7 @@ export class FormUserDetails extends Component {
 					required
 					hintText="Ex. jacob@trayson.com"
 					floatingLabelText="Email *"
-					onChange={handleChange('email')} // Destructure. No need for this.props.handleChange
+					onChange={handleChange('email')}
 					defaultValue={values.email}
 					id="email"
             		label="Email Address"
@@ -55,7 +55,7 @@ export class FormUserDetails extends Component {
 					required
 					hintText="•••••••••"
 					floatingLabelText="Password *"
-					onChange={handleChange('password')} // Destructure. No need for this.props.handleChange
+					onChange={handleChange('password')}
 					defaultValue={values.password}
 					id="password"
             		label="Password"

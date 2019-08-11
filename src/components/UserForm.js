@@ -34,7 +34,6 @@ export class UserForm extends Component {
 		this.setState({[input]: event.target.value});
 	}
 
-
 	render() {
 		const { step } = this.state;
 		const { name, role, email, password } = this.state;
