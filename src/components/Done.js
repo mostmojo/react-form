@@ -17,11 +17,11 @@ export class Done extends Component {
 	render() {
 		return (
 			<MuiThemeProvider>
-				<React.Fragment>
+				<>
 					<AppBar title="Done" />
 					<h1><span role="img" aria-label="checkbox">✔</span> Please verify your email address.</h1>
 					<p>You should have received an email from us already! <span role="img" aria-label="party-emoji">🎉</span></p>
-				</React.Fragment>
+				</>
 			</MuiThemeProvider>
 		);
 	}

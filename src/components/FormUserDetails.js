@@ -14,7 +14,7 @@ export class FormUserDetails extends Component {
 		const { values, handleChange } = this.props; // this.props.values
 		return (
 			<MuiThemeProvider>
-				<React.Fragment>
+				<>
 					<AppBar title="Enter User Details" />
 					<TextField
 					required
@@ -70,7 +70,7 @@ export class FormUserDetails extends Component {
 					style={styles.button}
 					onClick={this.continue}
 					/>
-				</React.Fragment>
+				</>
 			</MuiThemeProvider>
 		);
 	}

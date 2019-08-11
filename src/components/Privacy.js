@@ -22,7 +22,7 @@ export class Privacy extends Component {
 	render() {
 		return (
 			<MuiThemeProvider>
-				<React.Fragment>
+				<>
 					<AppBar title="Privacy" />
 					<FormControl component="fieldset">
 						<FormGroup>
@@ -52,7 +52,7 @@ export class Privacy extends Component {
 					style={styles.button}
 					onClick={this.back}
 					/>
-				</React.Fragment>
+				</>
 			</MuiThemeProvider>
 		);
 	}

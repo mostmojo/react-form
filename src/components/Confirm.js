@@ -20,7 +20,7 @@ export class FormUserDetails extends Component {
 		const { values: { name, role, email } } = this.props; // this.props.values
 		return (
 			<MuiThemeProvider>
-				<React.Fragment>
+				<>
 					<AppBar title="Confirm" />
 					<List>
 						<ListItem
@@ -49,7 +49,7 @@ export class FormUserDetails extends Component {
 					style={styles.button}
 					onClick={this.back}
 					/>
-				</React.Fragment>
+				</>
 			</MuiThemeProvider>
 		);
 	}
