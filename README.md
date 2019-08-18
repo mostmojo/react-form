@@ -1,6 +1,6 @@
 # React form
 
-To get this set up in your own local environment using the command line:
+Set up this project up locally using the command line:
 
 * `git clone git@github.com:mostmojo/react-form.git` (SSH preferred method)
 
